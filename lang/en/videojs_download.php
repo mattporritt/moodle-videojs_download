@@ -25,3 +25,4 @@
 $string['pluginname'] = 'Download videos';
 $string['privacy:metadata'] = 'This plugin does not store any personal data.';
 
+$string['download'] = 'Download video';

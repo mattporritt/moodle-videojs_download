@@ -14,13 +14,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Brightcove video rendering
+ * VideoJS download plugin.
  *
  * @package    videojs_download
  * @copyright  2019 Matt Porritt <mattp@catalyst-au.net>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 define(['media_videojs/video-lazy'], function(videojs) {
+
+/*
+ * START NATIVE PLUGIN CODE.
+ */
 
  // Default options for the plugin.
     const defaults = {
@@ -99,7 +103,11 @@ define(['media_videojs/video-lazy'], function(videojs) {
     };
 
     // Register the plugin with video.js.
-    videojs.registerPlugin('vjsdownload', vjsdownload);
+    videojs.registerPlugin('download', vjsdownload);
+
+/*
+ * END NATIVE PLUGIN CODE.
+ */
 
    return vjsdownload;
 
